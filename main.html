@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="font-sans bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center p-6 bg-black text-white">
+        <div class="logo text-3xl font-bold">_UBR 4375</div>
+        <div class="social flex items-center space-x-4">
+            <div class="join text-sm">Follow us on:</div>
+            <div class="icon space-x-4">
+                <a href="#" class="text-white hover:text-green-500 transition-colors duration-300"></a>
+               
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+     <div class="hero flex flex-col md:flex-row justify-center items-center p-12 bg-gradient-to-r from-black via-gray-800 to-gray-900 text-white">
+        <div class="hero_left w-full md:w-1/2 text-center md:text-left">
+             <section class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">Hello World</h2>
+        <p class="text-lg text-gray-300">
+            Nous sommes une équipe passionnée, motivée par l'innovation et l'apprentissage. 
+            Ce site représente notre salle de classe et tout ce que nous avons accompli ensemble. 
+            Venez découvrir nos projets et notre histoire !
+        </p>
+    </section>
+            <button class="bg-white text-black py-2 px-6 rounded-full hover:bg-gray-300 transition-all duration-300">Get Started</button>
+        </div>
+        <div class="hero_right w-full md:w-1/2 mt-8 md:mt-0 text-center">
+            <img src="ok.png" alt="Hero Image" class="w-full rounded-lg shadow-lg mx-auto">
+        </div>
+       
+    </div>
+
+     <section class="my-12 px-10 ">
+        <h2 class="text-3xl font-bold text-center mb-6">Les membres de notre classe</h2>
+        <div id="members-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Les membres seront injectés ici par JavaScript -->
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <div class="project mt-16 text-center px-4 py-5 ">
+        <h1 class="text-3xl font-bold mb-8">Recent Update</h1>
+          <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Les projets seront injectés ici par JavaScript -->
+    </div>
+        
+        
+    </div>
+    
+    <!-- Footer -->
+      <footer class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8" id="footer-content">
+                <!-- Footer content will be added by JavaScript -->
+            </div>
+
+            <div class="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-slate-400 text-sm">© 2024 M_World. All rights reserved.</p>
+                <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script type="module">
+        // Importation du module contenant la logique des membres
+        import { displayMembers } from './script/membersModule.js';
+         import { displayProjects } from './script/projectModule.js';
+
+        // Appel de la fonction pour afficher les membres dans la section
+        displayMembers('members-container');
+        // Appel de la fonction pour afficher les projets dans la section
+        displayProjects('projects-container');
+
+       
+    </script>
+    
+    
+</body>
+</html>

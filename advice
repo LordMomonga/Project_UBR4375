@@ -1,0 +1,4 @@
+To create my mario style game we need to :
+- create a scene (for this case, it's a 2d scene )
+- create our player (a simple 2d character to setup our logic)
+- apply all the physics to our player, for example gravity, collision and other
