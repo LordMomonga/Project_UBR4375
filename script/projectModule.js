@@ -2,7 +2,7 @@ export const projects = [
     {
         name: "Mario Game",
         description: "A classic Mario game built with HTML, CSS, and JavaScript.",
-        image: "marioworld.jpg",
+        image: "./assets/images/marioworld.jpg",
         link: "./projects/mario.html",
         developer: "Kamisi Samuel",
         date: "2023-10-01",

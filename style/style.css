@@ -119,7 +119,7 @@ a{
 .portrait{
     border-radius: 10px;
     height: 130px;
-    background-image: url(marioworld.jpg);
+    background-image: url(./assets/images/marioworld.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 15px 15px 20px gray;

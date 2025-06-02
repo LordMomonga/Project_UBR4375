@@ -312,9 +312,9 @@ const key = {
     pressed: false,
   }
 };
-const background = new Sprites({ x: 0, y: 0 }, "../images/tiles.png");
-const obs = new Obstacle({ x: 30, y: 383 }, "../images/tiles.png", 2, 24);
-const obs1 = new Obstacle({ x: 318, y: 430 }, "../images/tiles.png", 20, 27);
+const background = new Sprites({ x: 0, y: 0 }, "../assets/images/tiles.png");
+const obs = new Obstacle({ x: 30, y: 383 }, "../assets/images/tiles.png", 2, 24);
+const obs1 = new Obstacle({ x: 318, y: 430 }, "../assets/images/tiles.png", 20, 27);
 
 
 const player = new Player({
@@ -322,32 +322,32 @@ const player = new Player({
     x: 5,
     y: 2,
   },
-  imageSrc: "../images/_Idle.png",
+  imageSrc: "../assets/images/_Idle.png",
   frameRate: 10,
   animations: {
     idle: {
-      imageSrc: "../images/_Idle.png",
+      imageSrc: "../assets/images/_Idle.png",
       frameRate: 10,
       frameBuffer: 3,
     },
 
     run: {
-      imageSrc: "../images/_Run.png",
+      imageSrc: "../assets/images/_Run.png",
       frameRate: 10,
       frameBuffer: 3,
     },
     jump: {
-      imageSrc: "../images/_Jump.png",
+      imageSrc: "../assets/images/_Jump.png",
       frameRate: 3,
       frameBuffer: 3,
     },
     fall: {
-      imageSrc: "../images/_Fall.png",
+      imageSrc: "../assets/images/_Fall.png",
       frameRate: 3,
       frameBuffer: 3,
     },
     fight: {
-      imageSrc: "../images/_Attack2.png",
+      imageSrc: "../assets/images/_Attack2.png",
       frameRate: 6,
       frameBuffer: 2,
     },
