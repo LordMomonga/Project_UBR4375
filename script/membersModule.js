@@ -2,7 +2,7 @@
 
 // Tableau d'objets pour les membres de la classe
 export const members = [
-    { name: "Kamisi Samuel", role: "Développeur Front-end", image: "member1.jpg" },
+    { name: "Kamisi Samuel", role: "Développeur ", image: "./assets/userImage/profil_Samuel.jpg" },
 
 ];
 
